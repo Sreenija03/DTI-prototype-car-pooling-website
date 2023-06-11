@@ -65,16 +65,19 @@
     <!-- Find a Ride -->
     <div id="FindARide" class=" bg">
         <h1 class="main-heading">Find a Ride</h1>
-        <form id="findForm">
+        <form action="//www.google.com/maps" id="findForm">
             <div class="formi">
                 <div class="mt-3 mb-3">
                     <label style="font-size:20px;color:black;" for="fRf">From :</label>
-                    <input class="form-control" type="text" id="fRf" />
+                    <!-- <input class="form-control" type="text" id="fRf" /> -->
+                    <input aria-label="From Location" class="form-control"id="oRf" name="saddr" placeholder="FROM" type="text">
                     <p id="fRfErrMsg"></p>
                 </div>
                 <div class="mb-3">
                     <label style="font-size:20px;color:black;" for="fRt">To :</label>
-                    <input class="form-control" type="text" id="fRt" />
+                    <!-- <input class="form-control" type="text" id="fRt" /> -->
+                    <input aria-label="To Location" class="form-control" id="oRt" name="daddr" placeholder="TO" type="text">
+                    
                     <p id="fRtErrMsg"></p>
                 </div>
                 <div class="mb-3">
@@ -83,7 +86,7 @@
                     <p id="fRdErrMsg"></p>
                 </div>
                 <div class="text-center">
-                <button id="FindRideBtn" type="button" class="button1 btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
+                <button id="FindRideBtn" type="submit" class="button1 btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
                     Find
                   </button>
                 </div>
@@ -109,7 +112,6 @@
                     </div>
                   </div>
                 
-                
             </div>
         </form>
     </div>
@@ -117,16 +119,18 @@
     <!-- Offer a Ride -->
     <div id="OfferARide" class="bg2 ">
         <h1 class="main-heading">Offer a Ride</h1>
-        <form id="offerForm">
+        <form action="//www.google.com/maps" id="offerForm">
             <div class="formi">
                 <div class="mt-3 mb-3">
                     <label style="font-size:20px;color:black;" for="oRf">From :</label>
-                    <input class="form-control" type="text" id="oRf" />
+                    <!-- <input class="form-control" type="text" id="oRf" /> -->
+                    <input aria-label="From Location" class="form-control"id="oRf" name="saddr" placeholder="FROM" type="text">
                     <p id="oRfErrMsg"></p>
                 </div>
                 <div class="mb-3">
                     <label style="font-size:20px;color:black;" for="oRt">To :</label>
-                    <input class="form-control" type="text" id="oRt" />
+                    <!-- <input class="form-control" type="text" id="oRt" /> -->
+                    <input aria-label="To Location" class="form-control" id="oRt" name="daddr" placeholder="TO" type="text">
                     <p id="oRtErrMsg"></p>
                 </div>
                 <div class="mb-3">
@@ -136,7 +140,7 @@
                 </div>
                
                 <div class="text-center">
-                <button id="OfferRideBtn" type="button" class="button1 btn btn-primary" data-toggle="modal" data-target="#staticBackdrop1">
+                <button id="OfferRideBtn" type="submit" class="button1 btn btn-primary" data-toggle="modal" data-target="#staticBackdrop1">
                     Offer
                   </button>
                 </div>
