@@ -202,6 +202,7 @@ h1{
 
 .feature-item {
     padding: 20px;
+    transition: all 0.3s;
     background-color: white;
     border-radius: 15px;
     margin: 10px;
@@ -209,7 +210,9 @@ h1{
     max-width: 300px;
     text-align: center;
 }
-
+.feature-item:hover{
+    transform: scale(1.07);
+}
 .hiwh {
     font-weight: bold;
     font-size: 20px;
